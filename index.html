@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>finlee.ee</title>
+    <link rel="stylesheet" href="stylesheet.css">
+  </head>
+  <body>
+    <header>
+      <a href="index.html">mainpage</a>
+      <a href="profile.html">profile</a>
+      <a href="sign.html">sign/symbol</a>
+      <a href="music.html">music</a>
+      <a href="links.html">links</a>
+    </header>
+    <p></p>
+    <h1><reverse>#</reverse> finlee.ee</h1>
+    <p>hello there, i'm finley <em>(she/they)</em> and this is my website!!</p>
+    <img src="assets/hi.png">
+    <p id="random-quote" class="random-quote"></p>
+    </img>
+    <footer>
+      <a>made by finley</a>
+    </footer>
+    <script>
+      const quotes = [
+        "\"incredibly cute and sweet gal, would hug\" -witix",
+        "\"a way gay enby furry artist\" -thego",
+        "\"really cool person, don't listen to her if she says otherwise\" -astroalex",
+        "\"overall sweetheart with a passion for music\" -nessy",
+      ];
+
+      function getQuote() {
+        const randomIndex = Math.floor(Math.random() * quotes.length);
+        return quotes[randomIndex];
+      }
+
+      document.getElementById('random-quote').innerText = getQuote();
+    </script>
+  </body>
+</html>

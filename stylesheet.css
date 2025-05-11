@@ -1,0 +1,120 @@
+@font-face {
+  font-family: 'tamzen';
+  src: url('fonts/regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'tamzen';
+  src: url('fonts/bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+:root {
+  --side-bg: #13183d;
+  --text-bg: #090c22;
+  --text-color: #e2d0e3;
+  --highlight-color: #cd6cf1;
+  --link-bg: #bbe0f1;
+  --link-hover-bg: #ffffff;
+  --quote-color: #60a9cb;
+}
+
+html {
+  background-color: var(--side-bg);
+  height: 100%;
+}
+
+body {
+  color: var(--text-color);
+  background-color: var(--text-bg);
+  font-family: 'tamzen', sans-serif;
+  width: 60%;
+  text-align: left;
+  font-size: 16px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+em {
+  color: var(--highlight-color);
+  font-style: normal;
+}
+
+h1 {
+  font-size: 16px;
+}
+
+h2 {
+  color: var(--link-bg);
+  font-size: 16px;
+}
+
+a {
+  background-color: var(--link-bg);
+  color: var(--text-bg);
+  text-decoration: none;
+  padding: 0 8px;
+}
+
+a:hover {
+  background-color: var(--link-hover-bg);
+}
+
+.random-quote {
+  color: var(--quote-color);
+}
+
+p a, li a {
+  background-color: var(--text-bg);
+  color: var(--link-bg);
+  padding: 0px;
+}
+
+p a:hover, li a:hover {
+  background-color: var(--link-bg);
+  color: var(--text-bg);
+}
+
+li {
+  text-align-last: left;
+  padding-left: 8px;
+  list-style-type: none;
+}
+
+header a {
+  display: block;
+}
+
+header, footer {
+  background-color: var(--link-bg);
+  color: var(--text-bg);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 60%;
+}
+
+reverse {
+  color: var(--text-bg);
+  background-color: var(--text-color);
+}
+
+h2 reverse {
+  color: var(--text-bg);
+  background-color: var(--link-bg);
+}
+
+buttons a, buttons a:hover {
+  color: var(--text-bg);
+  background-color: var(--text-bg);
+  padding: 0px;
+}
